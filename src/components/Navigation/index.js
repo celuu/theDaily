@@ -1,10 +1,11 @@
-import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
-      <Routes>
-        <Route path="/" element={<Form />}></Route>
-      </Routes>
+      <div>
+        <Link to="/calendar">Calendar</Link>
+        <Link to='/form'>Form</Link>
+      </div>
     );
 }
 
